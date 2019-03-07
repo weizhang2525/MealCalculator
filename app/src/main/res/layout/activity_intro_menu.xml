@@ -7,51 +7,85 @@
     tools:context=".IntroMenu">
 
     <Button
-        android:id="@+id/calculateTipBTN"
+        android:id="@+id/calculateBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate Tip"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="203dp" />
+        android:background="@color/colorAccent"
+        android:onClick="calculateButton"
+        android:text="Calculate"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="554dp" />
 
-    <Button
-        android:id="@+id/addBTN"
+    <EditText
+        android:id="@+id/item4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Meal"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="283dp" />
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="328dp" />
 
-    <Button
-        android:id="@+id/searchBTN"
+    <EditText
+        android:id="@+id/item5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search Meal"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="370dp" />
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="373dp" />
 
-    <Button
-        android:id="@+id/deleteBTN"
+    <EditText
+        android:id="@+id/item6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DELETE MEAL"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="455dp" />
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="419dp" />
 
-    <Button
-        android:id="@+id/viewBTN"
+    <EditText
+        android:id="@+id/item7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Meal(s)"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="536dp" />
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <EditText
+        android:id="@+id/item3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <EditText
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <EditText
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="195dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Meal Calculator N Tracker"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="128dp" />
+        android:text="Enter in prices up to 7 items."
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="115dp" />
+
 </android.support.constraint.ConstraintLayout>

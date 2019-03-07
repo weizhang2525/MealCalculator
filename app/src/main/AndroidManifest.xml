@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".IntroMenu"></activity>
+        <activity android:name=".viewScreen"></activity>
+        <activity android:name=".deleteScreen" />
+        <activity android:name=".searchScreen" />
+        <activity android:name=".addScreen" />
+        <activity android:name=".IntroMenu" />
         <activity android:name=".calculateScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>
