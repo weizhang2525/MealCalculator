@@ -7,10 +7,51 @@
     tools:context=".IntroMenu">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/calculateTipBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:text="Calculate Tip"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <Button
+        android:id="@+id/addBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Meal"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <Button
+        android:id="@+id/searchBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Meal"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <Button
+        android:id="@+id/deleteBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE MEAL"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <Button
+        android:id="@+id/viewBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Meal(s)"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Calculator N Tracker"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="128dp" />
 </android.support.constraint.ConstraintLayout>
