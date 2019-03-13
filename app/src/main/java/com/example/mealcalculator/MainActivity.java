@@ -6,7 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
+
+    public static FirebaseDatabase dataBase = FirebaseDatabase.getInstance();
+    public static DatabaseReference mealEntry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +43,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, viewScreen.class);
         startActivity(intent);
 
+    }
+
+    public void calculateButton(View view){
+        Intent intent = new Intent(this, IntroMenu.class);
+        startActivity(intent);
     }
 }

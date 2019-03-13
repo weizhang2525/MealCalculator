@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="25dp"
         android:background="@color/colorAccent"
         android:onClick="calculateButton"
         android:text="Calculate"
@@ -23,14 +23,17 @@
 
     <EditText
         android:id="@+id/totalPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="293dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
 
 
     <RadioGroup
@@ -48,7 +51,7 @@
             android:id="@+id/fifthTeenTip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="43dp"
+            android:layout_marginBottom="20dp"
             android:checked="false"
             android:clickable="false"
             android:onClick="checkButton"
@@ -62,7 +65,7 @@
             android:id="@+id/eighTeenTip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="43dp"
+            android:layout_marginBottom="20dp"
             android:checked="false"
             android:onClick="checkButton"
             android:text="18%"
@@ -74,10 +77,9 @@
             android:id="@+id/twentyTip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="47dp"
+            android:layout_marginBottom="20dp"
             android:onClick="checkButton"
             android:text="20%"
-            app:layout_constraintBottom_toTopOf="@+id/customTip"
             app:layout_constraintStart_toStartOf="@+id/eighTeenTip"
             app:layout_constraintTop_toBottomOf="@+id/eighTeenTip" />
 
@@ -87,7 +89,7 @@
         android:id="@+id/customButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="287dp"
+        android:layout_marginBottom="286dp"
         android:onClick="customTipButton"
         android:text="Add Custom Tip"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,10 +100,14 @@
         android:id="@+id/homeBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="homeButton"
         android:text="home"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/calculateFinalTotal"
-        app:layout_constraintTop_toBottomOf="@+id/calculateFinalTotal" />
+        app:layout_constraintTop_toBottomOf="@+id/calculateFinalTotal"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>

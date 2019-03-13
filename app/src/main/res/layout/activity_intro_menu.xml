@@ -10,82 +10,107 @@
         android:id="@+id/calculateBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
         android:onClick="calculateButton"
         android:text="Calculate"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="554dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item7"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/item4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
+        android:hint="@string/item_4"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="328dp" />
+        app:layout_constraintStart_toStartOf="@+id/item3"
+        app:layout_constraintTop_toBottomOf="@+id/item3" />
 
     <EditText
         android:id="@+id/item5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
+        android:hint="Item 5"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="373dp" />
+        app:layout_constraintStart_toStartOf="@+id/item4"
+        app:layout_constraintTop_toBottomOf="@+id/item4" />
 
     <EditText
         android:id="@+id/item6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
+        android:hint="@string/item_6"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="419dp" />
+        app:layout_constraintStart_toStartOf="@+id/item5"
+        app:layout_constraintTop_toBottomOf="@+id/item5" />
 
     <EditText
         android:id="@+id/item7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
+        android:hint="Item 7"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="464dp" />
+        app:layout_constraintStart_toStartOf="@+id/item6"
+        app:layout_constraintTop_toBottomOf="@+id/item6" />
 
     <EditText
         android:id="@+id/item3"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Item 3"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintStart_toStartOf="@+id/item2"
+        app:layout_constraintTop_toBottomOf="@+id/item2" />
 
     <EditText
         android:id="@+id/item2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Item 2"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="238dp" />
+        app:layout_constraintStart_toStartOf="@+id/item1"
+        app:layout_constraintTop_toBottomOf="@+id/item1" />
 
     <EditText
         android:id="@+id/item1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="193dp"
         android:ems="10"
+        android:hint="Item 1"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="28dp"
         android:text="Enter in prices up to 7 items."
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="115dp" />
+        app:layout_constraintBottom_toTopOf="@+id/item1"
+        app:layout_constraintStart_toStartOf="@+id/item1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
