@@ -36,9 +36,8 @@ import com.google.firebase.database.FirebaseDatabase;
      }
 
      public void addButton(View view)
-    {
-
-     addMeal();
+     {
+         addMeal();
 
      }
 
@@ -52,26 +51,23 @@ import com.google.firebase.database.FirebaseDatabase;
 
      private void addMeal(){
 
-     String name = editMealName.getText().toString().trim();
-    String total = editMealTotal.getText().toString().trim();
-    String date = dateText.getText().toString().trim();
+         String name = editMealName.getText().toString().trim();
+         String total = editMealTotal.getText().toString().trim();
+         String date = dateText.getText().toString().trim();
 
-     if( TextUtils.isEmpty(name) || TextUtils.isEmpty(total) || TextUtils.isEmpty(date) ){
-        Toast.makeText(this, "You must fill in all fields", Toast.LENGTH_LONG) .show();
-
-
-     }else{
-
-         String id = mealEntry.push().getKey();
-        Meal meal = new Meal(id, name, total, date);
-
-         mealEntry.child(id).setValue(meal);
-        Toast.makeText(this, "Meal Added!", Toast.LENGTH_LONG) .show();
-    }
+         if( TextUtils.isEmpty(name) || TextUtils.isEmpty(total) || TextUtils.isEmpty(date) ){
+            Toast.makeText(this, "You must fill in all fields", Toast.LENGTH_LONG) .show();
 
 
+         }
+         else{
 
+             String id = mealEntry.push().getKey();
+             Meal meal = new Meal(id, name, total, date);
 
+             mealEntry.child(id).setValue(meal);
+             Toast.makeText(this, "Meal Added!", Toast.LENGTH_LONG) .show();
+         }
 
 
      }

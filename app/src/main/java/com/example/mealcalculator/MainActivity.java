@@ -11,9 +11,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static FirebaseDatabase dataBase = FirebaseDatabase.getInstance();
-    public static DatabaseReference mealEntry;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
