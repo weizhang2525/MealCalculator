@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addScreen">
+
+    <EditText
+        android:id="@+id/editMealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:hint="Name of Restaurant"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editMealTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Total of Meal"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editMealName"
+        app:layout_constraintTop_toBottomOf="@+id/editMealName" />
+
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/editMealTotal"
+        app:layout_constraintTop_toBottomOf="@+id/editMealTotal" />
+
+    <Button
+        android:id="@+id/addBTN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:onClick="addButton"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+    <Button
+        android:id="@+id/homeBTN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:onClick="homeButton"
+        android:text="home"
+        app:layout_constraintStart_toStartOf="@+id/addBTN2"
+        app:layout_constraintTop_toBottomOf="@+id/addBTN2" />
+</android.support.constraint.ConstraintLayout>

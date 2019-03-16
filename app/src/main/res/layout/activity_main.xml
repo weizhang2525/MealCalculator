@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/calculateTipBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="calculateButton"
+        android:text="Calculate Tip"
+        app:layout_constraintBottom_toTopOf="@+id/addBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/addBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="addButton"
+        android:text="Add Meal"
+        app:layout_constraintBottom_toTopOf="@+id/searchBTN"
+        app:layout_constraintStart_toStartOf="@+id/searchBTN"
+        app:layout_constraintTop_toBottomOf="@+id/calculateTipBTN" />
+
+    <Button
+        android:id="@+id/searchBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="searchButton"
+        android:text="Search Meal"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBTN"
+        app:layout_constraintStart_toStartOf="@+id/calculateTipBTN"
+        app:layout_constraintTop_toBottomOf="@+id/addBTN" />
+
+    <Button
+        android:id="@+id/deleteBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="deleteButton"
+        android:text="DELETE MEAL"
+        app:layout_constraintBottom_toTopOf="@+id/viewBTN"
+        app:layout_constraintStart_toStartOf="@+id/searchBTN"
+        app:layout_constraintTop_toBottomOf="@+id/searchBTN" />
+
+    <Button
+        android:id="@+id/viewBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="147dp"
+        android:onClick="viewButton"
+        android:text="View Meal(s)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/deleteBTN"
+        app:layout_constraintTop_toBottomOf="@+id/deleteBTN" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="53dp"
+        android:text="Meal Calculator N Tracker"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/calculateTipBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

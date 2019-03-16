@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "967657397900",
+    "firebase_url": "https://mealcalculator-76fe4.firebaseio.com",
+    "project_id": "mealcalculator-76fe4",
+    "storage_bucket": "mealcalculator-76fe4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967657397900:android:27361565f700d75e",
+        "android_client_info": {
+          "package_name": "com.example.mealcalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967657397900-m5ekkbjgqqt06pthv7tl9mldocg1r6uq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealcalculator",
+            "certificate_hash": "0e2f8abce341ffd8ff24dc77d5e321ac189a9263"
+          }
+        },
+        {
+          "client_id": "967657397900-q4j9mafjj6cgsjhvof7riccsfv5th8s3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealcalculator",
+            "certificate_hash": "0de7e71089fdd4debe009ad04b969d072a8c38bd"
+          }
+        },
+        {
+          "client_id": "967657397900-s2g2johgtaomk0ptoj2v6bqa9i48ing8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3PtcxUZcO-zxBi0JyU2Grbpvr_0_ARQc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967657397900-s2g2johgtaomk0ptoj2v6bqa9i48ing8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
