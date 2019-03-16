@@ -1,7 +1,9 @@
 package com.example.mealcalculator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -34,12 +36,9 @@ public class viewScreen extends AppCompatActivity {
         ref = database.getReference("meals");
         list = new ArrayList<>();
         adapter = new ArrayAdapter<String>(this, R.layout.meal_info, R.id.mealInfo, list);
-        ref.addValueEventListener(new ValueEventListener()
-        {
-            public void onDataChange(DataSnapshot dataSnapshot)
-            {
-                for(DataSnapshot ds: dataSnapshot.getChildren())
-                {
+        ref.addValueEventListener(new ValueEventListener() {
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
 
                     meal = ds.getValue(Meal.class);
                     list.add("Restaurant: " + meal.getRestaurant() + "\nDate: " + meal.getDate() + "\nTotal: $" + meal.getTotal());
@@ -48,11 +47,16 @@ public class viewScreen extends AppCompatActivity {
                 listView.setAdapter(adapter);
             }
 
-            public void onCancelled(DatabaseError databaseError)
-            {
+            public void onCancelled(DatabaseError databaseError) {
             }
-         });
-
-
+        });
     }
+
+    public void homeButton(View view)
+    {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+
 }

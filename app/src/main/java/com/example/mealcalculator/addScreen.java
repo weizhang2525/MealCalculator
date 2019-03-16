@@ -30,9 +30,6 @@ public class addScreen extends AppCompatActivity {
         dateText = findViewById(R.id.dateText);
 
         mealEntry = databaseMeals.getReference("meals");
-
-
-
     }
 
     public void addButton(View view)
@@ -41,8 +38,6 @@ public class addScreen extends AppCompatActivity {
     addMeal();
 
     }
-
-
 
     public void homeButton(View view)
     {
@@ -68,10 +63,6 @@ public class addScreen extends AppCompatActivity {
         mealEntry.child(id).setValue(meal);
         Toast.makeText(this, "Meal Added!", Toast.LENGTH_LONG) .show();
     }
-
-
-
-
 
 
     }
