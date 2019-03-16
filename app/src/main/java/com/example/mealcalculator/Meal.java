@@ -15,6 +15,11 @@ public class Meal {
         this.date = date;
     }
 
+    Meal()
+    {
+
+    }
+
     public String getRestaurant() {return restaurant;}
     public String getMealID() {
         return mealID;
@@ -26,5 +31,21 @@ public class Meal {
 
     public String getDate() {
         return date;
+    }
+
+    public void setMealID(String mealID) {
+        this.mealID = mealID;
+    }
+
+    public void setRestaurant(String restaurant) {
+        this.restaurant = restaurant;
+    }
+
+    public void setTotal(String total) {
+        this.total = total;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }
