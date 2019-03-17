@@ -1,6 +1,8 @@
 package com.example.mealcalculator;
 
 public class Meal {
+    // Each meal is given a mealID (the id associated in the database)
+    // the restaurant, total and date that they were ordered 
     String mealID;
     String restaurant;
     String total;
