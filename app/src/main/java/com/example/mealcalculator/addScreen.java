@@ -12,7 +12,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class addScreen extends AppCompatActivity {
-
+    // This screen is for adding meals the the database
     FirebaseDatabase databaseMeals = FirebaseDatabase.getInstance();
     Meal meal;
     EditText editMealName;
@@ -30,6 +30,7 @@ public class addScreen extends AppCompatActivity {
         dateText = findViewById(R.id.dateText);
 
         mealEntry = databaseMeals.getReference("meals");
+        //sets up text edits to add meal details and references to the database 
     }
 
     public void addButton(View view)
@@ -46,7 +47,7 @@ public class addScreen extends AppCompatActivity {
     }
 
     private void addMeal(){
-
+    //gets each detail, checks if they are empty and if they are not, adds the meal to the database 
     String name = editMealName.getText().toString().trim();
     String total = editMealTotal.getText().toString().trim();
     String date = dateText.getText().toString().trim();
@@ -56,7 +57,7 @@ public class addScreen extends AppCompatActivity {
 
 
     }else{
-
+        //adding to database 
         String id = mealEntry.push().getKey();
         Meal meal = new Meal(id, name, total, date);
 
