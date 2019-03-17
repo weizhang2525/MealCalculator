@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 
 public class IntroMenu extends AppCompatActivity {
+    // This screen is for inputting prices of meals ordered to calculate 
+    // the amount of tip required.. transfers over to the Calculate screen
 
     private calculateTotal total = new calculateTotal();
 
@@ -52,7 +54,7 @@ public class IntroMenu extends AppCompatActivity {
             return 0.0;
         return Double.valueOf(entry);
     }
-
+    
     public void findSumPrice(double entry)
     {
         calculateTotal price = new calculateTotal(entry);
